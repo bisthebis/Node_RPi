@@ -10,4 +10,4 @@ var server = http.createServer((req, res) => {
   res.end('Hello from Raspberry Pi (NodeJS)')
 })
 
-server.listen(8080)
+server.listen(HTTP_PORT)
