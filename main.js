@@ -1,6 +1,8 @@
 const http = require('http')
 const exec = require('child_process').execSync
 
+const HTTP_PORT = 8080
+
 var server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'})
   var content = exec('ls -al')
@@ -8,4 +10,4 @@ var server = http.createServer((req, res) => {
   res.end('Hello from Raspberry Pi (NodeJS)')
 })
 
-server.listen(80)
+server.listen(8080)
