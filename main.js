@@ -7,8 +7,8 @@ const HTTP_PORT = 8080
 var app = express()
 
 app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Main page')
+  var content = exec('ls -al')
+  res.render('index.ejs', {contenu: content})
 }
 )
 

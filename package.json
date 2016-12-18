@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bisthebis/Node_RPi#readme",
   "dependencies": {
+    "ejs": "^2.5.5",
     "express": "^4.14.0"
   }
 }
