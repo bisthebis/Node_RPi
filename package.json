@@ -1,0 +1,22 @@
+{
+  "name": "node_raspberry_webinterface",
+  "version": "0.1.0",
+  "description": "HTTP Server in NodeJS built for customized use on my Raspberry Pi",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bisthebis/Node_RPi.git"
+  },
+  "keywords": [
+    "Raspberry"
+  ],
+  "author": "Boris Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bisthebis/Node_RPi/issues"
+  },
+  "homepage": "https://github.com/bisthebis/Node_RPi#readme"
+}
