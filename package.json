@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/bisthebis/Node_RPi/issues"
   },
-  "homepage": "https://github.com/bisthebis/Node_RPi#readme"
+  "homepage": "https://github.com/bisthebis/Node_RPi#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

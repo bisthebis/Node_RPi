@@ -1,13 +1,15 @@
 const http = require('http')
 const exec = require('child_process').execSync
+const express = require('express')
 
 const HTTP_PORT = 8080
 
-var server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'})
-  var content = exec('ls -al')
-  res.write(content + '\n\n')
-  res.end('Hello from Raspberry Pi (NodeJS)')
-})
+var app = express()
 
-server.listen(HTTP_PORT)
+app.get('/', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('Main page')
+}
+)
+
+app.listen(HTTP_PORT)
